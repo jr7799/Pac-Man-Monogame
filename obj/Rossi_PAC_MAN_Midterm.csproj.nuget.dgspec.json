@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jayro\\OneDrive\\Desktop\\Rossi_PAC-MAN_Midterm\\Rossi_PAC_MAN_Midterm.csproj": {}
+    "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Rossi_PAC_MAN_Midterm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jayro\\OneDrive\\Desktop\\Rossi_PAC-MAN_Midterm\\Rossi_PAC_MAN_Midterm.csproj": {
+    "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Rossi_PAC_MAN_Midterm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jayro\\OneDrive\\Desktop\\Rossi_PAC-MAN_Midterm\\Rossi_PAC_MAN_Midterm.csproj",
+        "projectUniqueName": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Rossi_PAC_MAN_Midterm.csproj",
         "projectName": "Rossi_PAC_MAN_Midterm",
-        "projectPath": "C:\\Users\\jayro\\OneDrive\\Desktop\\Rossi_PAC-MAN_Midterm\\Rossi_PAC_MAN_Midterm.csproj",
+        "projectPath": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Rossi_PAC_MAN_Midterm.csproj",
         "packagesPath": "C:\\Users\\jayro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jayro\\OneDrive\\Desktop\\Rossi_PAC-MAN_Midterm\\obj\\",
+        "outputPath": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

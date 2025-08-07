@@ -45,7 +45,9 @@ namespace Rossi_PAC_MAN_Midterm
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
             Globals.tileMapImage = Content.Load<Texture2D>("Tile Map");
+
             GridMapCreator.GenerateMap();
         }
 

@@ -4,38 +4,38 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Fire Back-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Fire Front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Fire Left.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Fire right.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Frost back-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Frost Front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Frost left-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Frost right-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Ghost back-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Ghost front-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Ghost left-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Ghost Right-sheet.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Attack back.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Attack Front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Attack left.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Attack right.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Death front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Idle back.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Idle Front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Idle left.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Idle Right.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem walk back.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem walk Front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem walk left.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem walk right.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Shock back.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Shock front.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Shock right.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/ShockLeft.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Tile Map.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/White.png</File>
-    <File>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Yellow.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Back-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Left.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Frost back-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Frost Front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Frost left-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Frost right-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Ghost back-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Ghost front-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Ghost left-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Ghost Right-sheet.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Attack back.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Attack Front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Attack left.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Attack right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Death front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Idle back.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Idle Front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Idle left.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Idle Right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk back.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk Front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk left.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock back.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock front.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/ShockLeft.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Tile Map.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/White.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Yellow.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
