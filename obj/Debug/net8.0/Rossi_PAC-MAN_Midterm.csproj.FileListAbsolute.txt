@@ -1,0 +1,63 @@
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.csproj.AssemblyReference.cache
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.AssemblyInfoInputs.cache
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.AssemblyInfo.cs
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.csproj.CoreCompileInputs.cache
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Fire Back-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Fire Front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Fire Left.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Fire right.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Frost back-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Frost Front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Frost left-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Frost right-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Ghost back-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Ghost front-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Ghost left-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Ghost Right-sheet.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Attack back.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Attack Front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Attack left.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Attack right.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Death front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Idle back.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Idle Front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Idle left.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem Idle Right.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem walk back.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem walk Front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem walk left.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Golem walk right.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Shock back.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Shock front.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Shock right.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\ShockLeft.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Tile Map.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\White.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Content\Yellow.xnb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Rossi_PAC-MAN_Midterm.exe
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Rossi_PAC-MAN_Midterm.deps.json
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Rossi_PAC-MAN_Midterm.runtimeconfig.json
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Rossi_PAC-MAN_Midterm.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\Rossi_PAC-MAN_Midterm.pdb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\NVorbis.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\android-arm\native\libopenal.so
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\android-arm64\native\libopenal.so
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\android-x64\native\libopenal.so
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\android-x86\native\libopenal.so
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\ios-arm64\native\libopenal.dylib
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\iossimulator-arm64\native\libopenal.dylib
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\iossimulator-x64\native\libopenal.dylib
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\osx\native\libopenal.dylib
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\win-x64\native\openal.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PA.18287140.Up2Date
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\refint\Rossi_PAC-MAN_Midterm.dll
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.pdb
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\Rossi_PAC-MAN_Midterm.genruntimeconfig.cache
+C:\Users\jayro\OneDrive\Desktop\Rossi_PAC-MAN_Midterm\obj\Debug\net8.0\ref\Rossi_PAC-MAN_Midterm.dll
