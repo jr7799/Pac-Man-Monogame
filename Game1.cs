@@ -1,15 +1,11 @@
-﻿/*------------CODE NOTES "FlowerBox-------------*/
-/*
-     //1 = Draw the grid map environment
-    
- */
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Rossi_PAC_MAN_Midterm.Environment;
 using System.Runtime.InteropServices;
 using System;
+using Rossi_PAC_MAN_Midterm.States;
+using Rossi_PAC_MAN_Midterm.States.Base;
 
 namespace Rossi_PAC_MAN_Midterm
 {
@@ -18,16 +14,11 @@ namespace Rossi_PAC_MAN_Midterm
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        //"Tile Map"
-        //CREATE THE DIFFERENT RECTANGLE FOR TEXTURES FROM THE TILE MAP PNG
-    
-
+        BaseGameState currentState = new LoadingState();
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
-            _graphics.PreferredBackBufferWidth = 1080;
-            _graphics.PreferredBackBufferHeight = 1296;
-            _graphics.ApplyChanges();
+            SetWindowScale();
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
@@ -35,9 +26,9 @@ namespace Rossi_PAC_MAN_Midterm
         protected override void Initialize()
         {
             Window.Title = "ROOT ROT STOMP - Rossi Pacman Midterm";
-
             Globals.Graphics = _graphics;
 
+            currentState.Initialize();
 
             base.Initialize();
         }
@@ -45,10 +36,7 @@ namespace Rossi_PAC_MAN_Midterm
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            Globals.tileMapImage = Content.Load<Texture2D>("Tile Map");
-
-            GridMapCreator.GenerateMap();
+            currentState.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -62,19 +50,32 @@ namespace Rossi_PAC_MAN_Midterm
 
         protected override void Draw(GameTime gameTime)
         {
-            float gridMapScaleValue = 2.7f;
             GraphicsDevice.Clear(Color.WhiteSmoke);
+
             _spriteBatch.Begin();
-           
-            int newX, newY;
-            for(int i = 0; i < GridMapCreator.totalSize; i++) //1
-            {
-                newX = i / GridMapCreator.mapRows;
-                newY = i % GridMapCreator.mapRows;
-                _spriteBatch.Draw(GridMapCreator.map[newY, newX].Texture, new Vector2(newX * (TileMap.tileSize * gridMapScaleValue), newY * (TileMap.tileSize * gridMapScaleValue)), GridMapCreator.map[newY, newX].textureSourceRectangle, Color.White, 0, Vector2.Zero, 2.7f, SpriteEffects.None, 0);
-            }
+
+            currentState.Render(_spriteBatch);
+
             _spriteBatch.End();
             base.Draw(gameTime);
         }
+
+        private void SetWindowScale()
+        {
+            const int BASE_W = 1080;
+            const int BASE_H = 1296;
+            int screenW = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            int screenH = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            float scaleW = (float)screenW / BASE_W;
+            float scaleH = (float)screenH / BASE_H;
+            float scale = Math.Min(scaleW, scaleH) / 1.2f;
+            Globals.windowScale = scale;
+            int w = (int)(BASE_W * scale);
+            int h = (int)(BASE_H * scale);
+            _graphics.PreferredBackBufferWidth = w;
+            _graphics.PreferredBackBufferHeight = h;
+            _graphics.ApplyChanges();
+        }
     }
 }
+

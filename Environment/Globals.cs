@@ -11,6 +11,7 @@ namespace Rossi_PAC_MAN_Midterm.Environment
     public static class Globals
     {
         public static Texture2D tileMapImage;
+        public static float windowScale;
         public static GraphicsDeviceManager Graphics { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace Rossi_PAC_MAN_Midterm.States.Base
     public abstract class BaseGameState
     {
         private readonly List<BaseGameObject> gameObjects = new List<BaseGameObject>();
+        public abstract void Initialize();
         public abstract void LoadContent(ContentManager contentManager);
         public abstract void UnloadContent(ContentManager contentManager);
         public abstract void HandleInput(GameTime gameTime);
