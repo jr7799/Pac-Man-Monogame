@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Fire right.png</SourceFile>
-  <SourceTime>2025-08-06T11:32:17.7682773-04:00</SourceTime>
-  <DestFile>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/bin/DesktopGL/Fire right.xnb</DestFile>
-  <DestTime>2025-08-06T12:30:03.0209457-04:00</DestTime>
+  <SourceFile>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire right.png</SourceFile>
+  <SourceTime>2025-08-07T15:14:17.3220826-04:00</SourceTime>
+  <DestFile>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/bin/DesktopGL/Fire right.xnb</DestFile>
+  <DestTime>2025-08-08T11:13:46.0278833-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-06-02T06:31:02-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

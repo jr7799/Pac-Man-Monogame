@@ -15,13 +15,16 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         Floor,
         Wall,
         PowerupFloor,
-        Tube
+        Tube,
+        FloorGate,
+        Gate
     }
 
     public class Tile : BaseGameObject
     {
         public TileType Type { get; set; }
         public bool IsWalkable => Type == TileType.Floor || Type == TileType.Tube || Type == TileType.PowerupFloor;
+        public bool IsGhostWalkable => Type == TileType.Floor || Type == TileType.Tube || Type == TileType.PowerupFloor || Type == TileType.Gate;
 
         public Rectangle textureSourceRectangle;
 
@@ -35,10 +38,28 @@ namespace Rossi_PAC_MAN_Midterm.Objects
             Type = type;
             this.texture = texture;
             textureSourceRectangle = rectangle;
+            isActive = true;
         }
         public override void Render(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, vectorPosition, textureSourceRectangle, Color.White, 0, Vector2.Zero, 2.7f * Globals.windowScale, SpriteEffects.None, (Type == TileType.Wall) ? 1 : 0);
+            if (isActive) spriteBatch.Draw(texture, vectorPosition, textureSourceRectangle, (Type == TileType.Wall) ? Color.Violet : Color.White, 0, Vector2.Zero, 2.7f * Globals.windowScale, SpriteEffects.None, (Type == TileType.Wall) ? 1 : 0);
+        }
+
+        public override void CheckCollisions(BaseGameObject other)
+        {
+            
+        }
+
+        public override Rectangle BoxCollider
+        {
+            get
+            {
+                //if (texture != null && Type == TileType.Wall)
+                //{
+                //    return new Rectangle((int)VectorPosition.X, (int)VectorPosition.Y, texture.Width, texture.Height);
+                //}
+                return Rectangle.Empty;
+            }
         }
     }
 }

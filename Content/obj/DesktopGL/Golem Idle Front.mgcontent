@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/Golem Idle Front.png</SourceFile>
-  <SourceTime>2025-08-06T12:08:26.521968-04:00</SourceTime>
-  <DestFile>C:/Users/jayro/OneDrive/Desktop/Rossi_PAC-MAN_Midterm/Content/bin/DesktopGL/Golem Idle Front.xnb</DestFile>
-  <DestTime>2025-08-06T12:30:03.1354467-04:00</DestTime>
+  <SourceFile>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem Idle Front.png</SourceFile>
+  <SourceTime>2025-08-07T15:14:17.3261097-04:00</SourceTime>
+  <DestFile>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/bin/DesktopGL/Golem Idle Front.xnb</DestFile>
+  <DestTime>2025-08-08T11:13:46.1369119-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-06-02T06:31:02-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

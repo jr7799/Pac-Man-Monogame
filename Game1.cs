@@ -2,10 +2,13 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Rossi_PAC_MAN_Midterm.Environment;
-using System.Runtime.InteropServices;
-using System;
+using Rossi_PAC_MAN_Midterm.FSM;
+using Rossi_PAC_MAN_Midterm.FSM.Base;
 using Rossi_PAC_MAN_Midterm.States;
 using Rossi_PAC_MAN_Midterm.States.Base;
+using System;
+using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 
 namespace Rossi_PAC_MAN_Midterm
 {
@@ -14,7 +17,34 @@ namespace Rossi_PAC_MAN_Midterm
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        BaseGameState currentState = new LoadingState();
+        GameFSM gameFSM = new GameFSM();
+        private string stateSwitchingKey;
+        private string quitGameKey;
+
+        private void SwitchGameState(string key)
+        {
+            if (gameFSM.M_STATE != null) //un-sub to old
+            {
+                gameFSM.M_STATE.OnStateSwitched -= OnStateSwitchRequestedFromState;
+                gameFSM.M_STATE.OnGameSignals -= OnGameSignalRequestedFromState;
+            }
+            gameFSM.SwitchState(key); //switch
+
+            if (gameFSM.M_STATE != null) //sub to new
+            {
+                gameFSM.M_STATE.OnStateSwitched += OnStateSwitchRequestedFromState;
+                gameFSM.M_STATE.OnGameSignals += OnGameSignalRequestedFromState;
+            }
+        }
+        private void OnStateSwitchRequestedFromState(string targetKey)
+        {
+            stateSwitchingKey = targetKey;
+        }
+        private void OnGameSignalRequestedFromState(string targetKey)
+        {
+            quitGameKey = targetKey;
+        }
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -22,28 +52,37 @@ namespace Rossi_PAC_MAN_Midterm
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
-
         protected override void Initialize()
         {
-            Window.Title = "ROOT ROT STOMP - Rossi Pacman Midterm";
+            Window.Title = "ROOT ROMP & STOMP - Rossi Pacman Midterm";
             Globals.Graphics = _graphics;
-
-            currentState.Initialize();
-
+            Globals.windowSize = new Point(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+            Globals.spriteScale = 2.7f * Globals.windowScale;
+            gameFSM.Initialize();
             base.Initialize();
         }
-
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            currentState.LoadContent(Content);
+            Globals.g_Content = Content;
+            SwitchGameState("LOAD_STATE");
         }
-
+        protected override void UnloadContent()
+        {
+            gameFSM.M_STATE.UnloadContent(Globals.g_Content);
+        }
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (!string.IsNullOrEmpty(stateSwitchingKey))
+            {
+                SwitchGameState(stateSwitchingKey);
+                stateSwitchingKey = null;
+            }
+            if(!string.IsNullOrEmpty(quitGameKey))
+            {
                 Exit();
-
+            }
+            gameFSM.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -54,7 +93,7 @@ namespace Rossi_PAC_MAN_Midterm
 
             _spriteBatch.Begin();
 
-            currentState.Render(_spriteBatch);
+            gameFSM.DrawRenders(_spriteBatch);
 
             _spriteBatch.End();
             base.Draw(gameTime);

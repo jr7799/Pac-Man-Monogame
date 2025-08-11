@@ -4,6 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Arial2.spritefont</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Back-sheet.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Front.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Fire Left.png</File>
@@ -29,6 +30,12 @@
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk Front.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk left.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Golem walk right.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/newEgg.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Pixel.spritefont</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/playerBack.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/playerFront.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/playerLeft.png</File>
+    <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/playerRight.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock back.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock front.png</File>
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Shock right.png</File>
@@ -38,6 +45,13 @@
     <File>C:/Users/jayro/OneDrive/Documents/GitHub/Pac-Man-Monogame/Content/Yellow.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

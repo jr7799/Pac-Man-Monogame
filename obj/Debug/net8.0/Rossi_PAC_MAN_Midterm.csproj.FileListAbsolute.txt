@@ -125,3 +125,10 @@ C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\obj\Debug\net8.0\refin
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\obj\Debug\net8.0\Rossi_PAC_MAN_Midterm.pdb
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\obj\Debug\net8.0\Rossi_PAC_MAN_Midterm.genruntimeconfig.cache
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\obj\Debug\net8.0\ref\Rossi_PAC_MAN_Midterm.dll
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\Arial2.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\Pixel.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerBack.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerFront.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerLeft.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerRight.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\newEgg.xnb
