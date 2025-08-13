@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rossi_PAC_MAN_Midterm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+151bea4bf80b28150eb4dd196c1896a221ceb414")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc7e13bdfbe1707ddfb4d8c49f55eb647e8fe818")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rossi_PAC_MAN_Midterm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rossi_PAC_MAN_Midterm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
