@@ -6,6 +6,7 @@ using Rossi_PAC_MAN_Midterm.Anims;
 using Rossi_PAC_MAN_Midterm.Environment;
 using Rossi_PAC_MAN_Midterm.Objects;
 using Rossi_PAC_MAN_Midterm.Objects.Base;
+using Rossi_PAC_MAN_Midterm.Objects.Ghost_States;
 using Rossi_PAC_MAN_Midterm.States.Base;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,8 @@ namespace Rossi_PAC_MAN_Midterm.States
     public class GameState : BaseGameState
     {
         private PacManGridMap pacmanMap = new PacManGridMap();
-
-        private SpriteManager spriteManager;
         private Player player;
+        private List<Ghost> ghosts = new();
         public override void Initialize()
         {
 
@@ -43,11 +43,41 @@ namespace Rossi_PAC_MAN_Midterm.States
             }
 
             //player gen
-            spriteManager = new SpriteManager();
+            SpriteManager spriteManager = new SpriteManager();
             Texture2D playerIdle = content.Load<Texture2D>("playerRight");
             spriteManager.LoadAnimation("idle", playerIdle, 16, 16, 4, 0.1f);
             player = new Player(spriteManager, new Point(12, 28), 16, Globals.spriteScale, 100f, pacmanMap);
             AddGameObject(player);
+
+            SpriteManager spriteManager1 = new SpriteManager();
+            Texture2D ghost = content.Load<Texture2D>("blue");
+            spriteManager1.LoadAnimation("idle", ghost, 13, 12, 1, 0.1f);
+            Ghost winky = new Ghost(spriteManager1, new Point(9, 19), 16, Globals.spriteScale, 110f, pacmanMap, player, "winky");
+            AddGameObject(winky); ghosts.Add(winky);
+
+            SpriteManager spriteManager2 = new SpriteManager();
+            Texture2D ghost1 = content.Load<Texture2D>("purp");
+            spriteManager2.LoadAnimation("idle", ghost1, 13, 12, 1, 0.1f);
+            Ghost dobby = new Ghost(spriteManager2, new Point(9, 17), 16, Globals.spriteScale, 110f, pacmanMap, player, "dobby");
+            AddGameObject(dobby); ghosts.Add(dobby);
+
+            SpriteManager spriteManager3 = new SpriteManager();
+            Texture2D ghost2 = content.Load<Texture2D>("yel");
+            spriteManager3.LoadAnimation("idle", ghost2, 13, 12, 1, 0.1f);
+            Ghost hokey = new Ghost(spriteManager3, new Point(15, 17), 16, Globals.spriteScale, 110f, pacmanMap, player, "hokey");
+            AddGameObject(hokey); ghosts.Add(hokey);
+
+            SpriteManager spriteManager4 = new SpriteManager();
+            Texture2D ghost3 = content.Load<Texture2D>("red");
+            spriteManager4.LoadAnimation("idle", ghost3, 13, 12, 1, 0.1f);
+            Ghost kreacher = new Ghost(spriteManager4, new Point(15, 19), 16, Globals.spriteScale, 110f, pacmanMap, player, "kreacher");           
+            AddGameObject(kreacher); ghosts.Add(kreacher);
+            
+
+            foreach(var g in ghosts)
+            {
+                g.fsm.SwitchState("START_STATE");
+            }
         }
         public override void HandleInput(GameTime gameTime)
         {
@@ -55,58 +85,76 @@ namespace Rossi_PAC_MAN_Midterm.States
         }
         public override void Update(GameTime gameTime)
         {
+            //updates and checks
+            player.Update(gameTime);
+            foreach (var g in ghosts)
+            {
+                g.Update(gameTime);
+            }
+            CheckCollisionsPlayerToEggs(player, pacmanMap.eggs, ghosts);
+
+            //input
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 InvokeGameSignals("QUIT_GAME");
             }
-
-            if (Keyboard.GetState().IsKeyDown(Keys.N))
+            if (player.playerLives <= 0)
             {
-                InvokeStateSwitched("LOSE_STATE");
+               InvokeStateSwitched("LOSE_STATE");
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.B))
+            if(pacmanMap.eggs.Count <= 0)
             {
                 InvokeStateSwitched("WIN_STATE");
             }
-
-            player.Update(gameTime);
-            CheckCollisionsPlayerToEggs(player, pacmanMap.eggs);
         }
         public override void RenderStrings(SpriteBatch spriteBatch)
         {
             string stateName = $"SCORE: {Globals.G_PlayerScore}"; //needs player score
             spriteBatch.DrawString(Globals.g_font, stateName, new Vector2(Globals.Graphics.PreferredBackBufferWidth / 2 - Globals.g_font.MeasureString(stateName).X/2, 0), Color.White);
         }
-        private void CheckCollisionsPlayerToEggs(Player Player, List<BaseGameObject> eggs)
+        private void CheckCollisionsPlayerToEggs(Player Player, List<Egg> eggs, List<Ghost> Ghosts)
         {
             foreach (var egg in eggs)
             {
                 if (!egg.isActive) continue;
                 if (Player.BoxCollider.Intersects(egg.BoxCollider))
                 {
-                    egg.isActive = false;
-                    Globals.G_PlayerScore += 10;
+                    if(egg.isPower)
+                    {
+                        egg.isActive = false;
+                        Globals.G_PlayerScore += 50;
+                        foreach (var g in Ghosts)
+                        {
+                            g.fsm.SwitchState("FLEE_STATE");
+                        }
+                    }
+                    else
+                    {
+                        egg.isActive = false;
+                        Globals.G_PlayerScore += 10;
+                    }
+
                 }
             }
         }
-        //private void CheckCollisionsPlayerToGhosts(Player Player, List<BaseGameObject> Ghosts)
-        //{
-        //    foreach (var ghost in Ghosts)
-        //    {
-        //        if (!ghost.isActive) continue;
-        //        if (Player.BoxCollider.Intersects(ghost.BoxCollider))
-        //        {
-        //            if(ghost.state == GhostStates.Fleeing)
-        //            {
-        //                ghost.isActive = false;
-        //                Globals.G_PlayerScore += 50;
-        //            }
-        //            else
-        //            {
-        //                player.isActive = false;
-        //            }
-        //        }
-        //    }
-        //}
+        private void CheckCollisionsPlayerToGhosts(Player Player, List<Ghost> Ghosts)
+        {
+            foreach (var ghost in Ghosts)
+            {
+                if (!ghost.isActive) continue;
+                if (Player.BoxCollider.Intersects(ghost.BoxCollider))
+                {
+                    if (ghost.flee == true)
+                    {
+                        ghost.isActive = false;
+                        Globals.G_PlayerScore += 100;
+                    }
+                    else
+                    {
+                        player.isActive = false;
+                    }
+                }
+            }
+        }
     }
 }

@@ -15,17 +15,16 @@ namespace Rossi_PAC_MAN_Midterm.FSM
 {
     public class GameFSM : BaseFSM<BaseGameState>
     {
-        public override void Initialize()
+        public override void Initialize(string name)
         {
-            M_STATES.Add("LOAD_STATE", new LoadingState());
-            M_STATES.Add("GAME_STATE", new GameState());
-            M_STATES.Add("WIN_STATE", new WinState());
-            M_STATES.Add("LOSE_STATE", new LoseState());
+            AddState("LOAD_STATE", new LoadingState());
+            AddState("GAME_STATE", new GameState());
+            AddState("WIN_STATE", new WinState());
+            AddState("LOSE_STATE", new LoseState());
         }
         public override void AddState(string key, BaseGameState newStateToAdd)
         {
             M_STATES.Add(key, newStateToAdd);
-
         }
         public override void SwitchState(string newKey)
         {
@@ -43,8 +42,7 @@ namespace Rossi_PAC_MAN_Midterm.FSM
             M_STATE.HandleInput(gameTime);
             M_STATE.Update(gameTime);
         }
-
-        public override void DrawRenders(SpriteBatch spriteBatch)
+        public void DrawRenders(SpriteBatch spriteBatch)
         {
             M_STATE.Render(spriteBatch);
             M_STATE.RenderStrings(spriteBatch);

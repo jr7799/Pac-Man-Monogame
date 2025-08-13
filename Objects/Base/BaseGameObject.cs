@@ -20,7 +20,6 @@ namespace Rossi_PAC_MAN_Midterm.Objects.Base
         public Rectangle rect;
         public int index;
         public bool isActive;
-        public string tag;
         public int layer;
         public Point GridPosition
         {
@@ -49,7 +48,6 @@ namespace Rossi_PAC_MAN_Midterm.Objects.Base
                 return Rectangle.Empty;
             }
         }
-        public abstract void CheckCollisions(BaseGameObject other);
         public virtual Vector2 PointToVectorConvert(int tileSize, Point GridPosition)
         {
             return new Vector2(

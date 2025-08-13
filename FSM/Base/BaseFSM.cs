@@ -28,11 +28,10 @@ namespace Rossi_PAC_MAN_Midterm.FSM.Base
             get { return mState; }
             set { mState = value; }
         }
-        public abstract void Initialize();
+        public abstract void Initialize(string name);
         public abstract void AddState(string key, TState newStateToAdd);
         public abstract void SwitchState(string newKey); //switch state
         public abstract void Update(GameTime gameTime);
-        public abstract void DrawRenders(SpriteBatch spriteBatch);
 
     }
 }

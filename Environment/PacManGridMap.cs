@@ -12,7 +12,7 @@ namespace Rossi_PAC_MAN_Midterm.Environment
 {
     public class PacManGridMap:TileMap
     {
-        public List<BaseGameObject> eggs = new List<BaseGameObject>();
+        public List<Egg> eggs = new List<Egg>();
         public List<BaseGameObject> powerUps = new List<BaseGameObject>();
 
         public override void GenerateMap()
@@ -23,7 +23,7 @@ namespace Rossi_PAC_MAN_Midterm.Environment
                { 1,5,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,5,1 },
                { 1,0,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,0,1 },
                { 1,0,1,1,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,0,1,1,0,1 },
-               { 9,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,9 },
+               { 1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1 },
                { 1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1 },
                { 1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1 },
                { 1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1 },
@@ -44,7 +44,7 @@ namespace Rossi_PAC_MAN_Midterm.Environment
                { 1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1 },
                { 1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1 },
                { 1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1 },
-               { 9,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,9 },
+               { 1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1 },
                { 1,0,1,1,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,0,1,1,0,1 },
                { 1,0,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,0,1 },
                { 1,5,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,5,1 },
@@ -84,11 +84,10 @@ namespace Rossi_PAC_MAN_Midterm.Environment
                 tile.GridPosition = new Point(newX, newY);
                 tile.VectorPosition = new Vector2(tile.GridPosition.X * (tileSize * gridMapScaleValue), tile.GridPosition.Y * (tileSize * gridMapScaleValue));
                 if (tile.Type == TileType.Floor)
-                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("newEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y)));
+                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("newEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16));
 
-                //ready to spawn powerups
-                //if (tile.Type == TileType.PowerupFloor) 
-                //    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("newEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y)));
+                if (tile.Type == TileType.PowerupFloor)
+                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("powerEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16, true));
 
                 tiles.Add(tile);
             }

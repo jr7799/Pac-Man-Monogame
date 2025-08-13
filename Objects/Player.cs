@@ -17,10 +17,8 @@ namespace Rossi_PAC_MAN_Midterm.Objects
     public enum PlayerDirections { None, Up, Down, Left, Right }
     public class Player : BaseGameObject
     {
-        BaseGameState currentState;
-
         //health data
-        int playerLives = 3;
+        public int playerLives = 3;
 
         //moving data
         private bool isMoving = false;
@@ -165,22 +163,22 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         {
             var kb = Keyboard.GetState();
 
-            if (kb.IsKeyDown(Keys.W) && IsWalkableTile(GridPosition.X, GridPosition.Y - 1)) //check walkable on key press
+            if (kb.IsKeyDown(Keys.W)  && IsWalkableTile(GridPosition.X, GridPosition.Y - 1) || kb.IsKeyDown(Keys.Up) && IsWalkableTile(GridPosition.X, GridPosition.Y - 1)) //check walkable on key press
             {
                 previousDir = currentDir;
                 currentDir = PlayerDirections.Up;
             }
-            else if (kb.IsKeyDown(Keys.S) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1))
+            else if (kb.IsKeyDown(Keys.S) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1) || kb.IsKeyDown(Keys.Down) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1))
             {
                 previousDir = currentDir;
                 currentDir = PlayerDirections.Down;
             }
-            else if (kb.IsKeyDown(Keys.A) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y))
+            else if (kb.IsKeyDown(Keys.A) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y) || kb.IsKeyDown(Keys.Left) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y))
             {
                 previousDir = currentDir;
                 currentDir = PlayerDirections.Left;
             }
-            else if (kb.IsKeyDown(Keys.D) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y))
+            else if (kb.IsKeyDown(Keys.D) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y) || kb.IsKeyDown(Keys.Right) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y))
             {
                 previousDir = currentDir;
                 currentDir = PlayerDirections.Right;
@@ -201,20 +199,12 @@ namespace Rossi_PAC_MAN_Midterm.Objects
                     MoveRight(gameTime);
                     break;
             }
-
-            //spriteManager.PlayAnimation(isMoving ? "walk" : "idle");
-        
-            if (playerLives <= 0)
-            {
-                currentState.InvokeStateSwitched("LOSE_STATE");
-            }
         }
         public override void Render(SpriteBatch spriteBatch)
         {
             SpriteEffects flipEffect = _facingLeft ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
             if(isActive) spriteManager.Draw(spriteBatch, new Vector2(VectorPosition.X - spriteManager._currentAnimation._frameWidth, VectorPosition.Y - spriteManager._currentAnimation._frameHeight), flipEffect);
         }
-
         public override Rectangle BoxCollider
         {
             get
@@ -242,10 +232,6 @@ namespace Rossi_PAC_MAN_Midterm.Objects
                     continue;
             }
             return tempTile.IsWalkable;
-        }
-        public override void CheckCollisions(BaseGameObject other)
-        {
-            
         }
     }
 }

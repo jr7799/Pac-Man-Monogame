@@ -17,7 +17,6 @@ namespace Rossi_PAC_MAN_Midterm.States.Base
     {
         public GameFSM fsm;
 
-
         private readonly List<BaseGameObject> gameObjects = new List<BaseGameObject>();
 
         public event Action<string> OnStateSwitched;

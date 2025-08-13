@@ -95,10 +95,10 @@ namespace Rossi_PAC_MAN_Midterm.States
         {
             string title = "ROOT ROMP & STOMP";
 
-            Vector2 winPos = new Vector2((Globals.Graphics.PreferredBackBufferWidth / 2 - Globals.g_font.MeasureString("LEVEL COMPLETE").X / 2), Globals.Graphics.PreferredBackBufferHeight / 2 - Globals.g_font.MeasureString("BETTER LUCK NEXT TIME").Y * 8);
+            Vector2 winPos = new Vector2(Globals.Graphics.PreferredBackBufferWidth / 2 - Globals.g_font.MeasureString("LEVEL COMPLETE").X / 2, Globals.Graphics.PreferredBackBufferHeight / 2 - Globals.g_font.MeasureString("BETTER LUCK NEXT TIME").Y * 8);
             _spriteBatch.DrawString(Globals.g_font, "LEVEL COMPLETE", winPos, Color.White);
 
-            Vector2 scorePos = new Vector2((Globals.Graphics.PreferredBackBufferWidth / 2) - Globals.g_font.MeasureString($"Score:{Globals.G_PlayerScore}").X / 2, Globals.Graphics.PreferredBackBufferHeight / 2 - Globals.g_font.MeasureString($"Score:{Globals.G_PlayerScore}").Y * 7);
+            Vector2 scorePos = new Vector2(Globals.Graphics.PreferredBackBufferWidth / 2 - Globals.g_font.MeasureString($"Score:{Globals.G_PlayerScore}").X / 2, Globals.Graphics.PreferredBackBufferHeight / 2 - Globals.g_font.MeasureString($"Score:{Globals.G_PlayerScore}").Y * 7);
             _spriteBatch.DrawString(Globals.g_font, $"Score:{Globals.G_PlayerScore}", scorePos, Color.White);
 
             Vector2 ExitPos = new Vector2(0 + Globals.g_font.MeasureString(title).X / 5, 32);

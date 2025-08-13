@@ -132,3 +132,9 @@ C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Conte
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerLeft.xnb
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\playerRight.xnb
 C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\newEgg.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\powerEgg.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\purp.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\red.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\teal.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\blue.xnb
+C:\Users\jayro\OneDrive\Documents\GitHub\Pac-Man-Monogame\bin\Debug\net8.0\Content\yel.xnb

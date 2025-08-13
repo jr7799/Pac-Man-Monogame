@@ -58,7 +58,9 @@ namespace Rossi_PAC_MAN_Midterm
             Globals.Graphics = _graphics;
             Globals.windowSize = new Point(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
             Globals.spriteScale = 2.7f * Globals.windowScale;
-            gameFSM.Initialize();
+
+            gameFSM.Initialize("");
+
             base.Initialize();
         }
         protected override void LoadContent()
@@ -83,7 +85,7 @@ namespace Rossi_PAC_MAN_Midterm
                 Exit();
             }
             gameFSM.Update(gameTime);
-
+            
             base.Update(gameTime);
         }
 
