@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Rossi_PAC_MAN_Midterm.Environment;
 using Rossi_PAC_MAN_Midterm.Objects.Ghost_States.Base;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,10 @@ namespace Rossi_PAC_MAN_Midterm.Objects.Ghost_States
 {
     public class HokeyChaseState : BaseGhostState
     {
-        public override void PerformAction(GameTime gameTime)
+        public override void PerformAction(GameTime gameTime, Point GridPosition, Vector2 VectorPosition, TileMap tileMap)
         {
             Debug.WriteLine("PERFORMING HOKEY CHASE ACTION");
+            
         }
     }
 }

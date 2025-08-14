@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Rossi_PAC_MAN_Midterm.Environment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace Rossi_PAC_MAN_Midterm.FSM.Base
         public abstract void Initialize(string name);
         public abstract void AddState(string key, TState newStateToAdd);
         public abstract void SwitchState(string newKey); //switch state
-        public abstract void Update(GameTime gameTime);
+        public abstract void Update(GameTime gameTime, Point point, Vector2 vectorPos, TileMap tileMap = null);
 
     }
 }

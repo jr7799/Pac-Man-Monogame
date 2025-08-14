@@ -46,9 +46,9 @@ namespace Rossi_PAC_MAN_Midterm.FSM
         {
             M_STATE = this[newKey];
         }
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos, TileMap tileMap)
         {
-            M_STATE.PerformAction(gameTime);
+            M_STATE.PerformAction(gameTime, point, vectorPos, tileMap);
         }
     }
 }

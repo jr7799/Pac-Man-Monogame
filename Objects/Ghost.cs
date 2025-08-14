@@ -26,6 +26,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         private readonly float moveSpeed;
 
         private Point startPoint;
+        private Point pointDir;
 
         private float timer = 2.5f;
         private float timerStartVal = 2.5f;
@@ -56,7 +57,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         }
         public override void Update(GameTime gameTime)
         {
-            fsm.Update(gameTime);
+            fsm.Update(gameTime, GridPosition, VectorPosition, tileMap);
 
             startTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
 
@@ -97,40 +98,6 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         {
             SpriteEffects flipEffect = _facingLeft ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
             if (isActive) spriteManager.Draw(spriteBatch, new Vector2(VectorPosition.X - spriteManager._currentAnimation._frameWidth, VectorPosition.Y - spriteManager._currentAnimation._frameHeight), flipEffect);
-        }
-        bool IsWalkableGhostTile(int tx, int ty)
-        {
-            if (tx < 0 || ty < 0 || tx >= TileMap.MAP_COLS || ty >= TileMap.MAP_ROWS)
-                return false;
-
-            Tile tempTile = null;
-            foreach (var tile in tileMap.tiles)
-            {
-                if (tile.GridPosition == new Point(tx, ty))
-                {
-                    tempTile = tile;
-                }
-                else
-                    continue;
-            }
-            return tempTile.IsGhostWalkable;
-        }
-        bool IsWalkableTile(int tx, int ty)
-        {
-            if (tx < 0 || ty < 0 || tx >= TileMap.MAP_COLS || ty >= TileMap.MAP_ROWS)
-                return false;
-
-            Tile tempTile = null;
-            foreach (var tile in tileMap.tiles)
-            {
-                if (tile.GridPosition == new Point(tx, ty))
-                {
-                    tempTile = tile;
-                }
-                else
-                    continue;
-            }
-            return tempTile.IsWalkable;
-        }
+        }       
     }
 }
