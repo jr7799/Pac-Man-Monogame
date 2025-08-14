@@ -84,10 +84,10 @@ namespace Rossi_PAC_MAN_Midterm.Environment
                 tile.GridPosition = new Point(newX, newY);
                 tile.VectorPosition = new Vector2(tile.GridPosition.X * (tileSize * gridMapScaleValue), tile.GridPosition.Y * (tileSize * gridMapScaleValue));
                 if (tile.Type == TileType.Floor)
-                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("newEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16));
+                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("newEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16, false, true));
 
                 if (tile.Type == TileType.PowerupFloor)
-                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("powerEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16, true));
+                    eggs.Add(new Egg(Globals.g_Content.Load<Texture2D>("powerEgg"), new Point(tile.GridPosition.X, tile.GridPosition.Y), 16, true, true));
 
                 tiles.Add(tile);
             }

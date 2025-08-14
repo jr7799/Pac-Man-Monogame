@@ -32,10 +32,10 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         private float timerStartVal = 2.5f;
 
 
-        private float startTimer = 5f;
+        public float startTimer = 5f;
 
         public bool flee = false;
-        
+        public float fleeTimer = 10f;
         public Ghost(SpriteManager spriteManager, Point startPoint, int tileSize, float moveTileScale, float moveSpeed, TileMap tileMap, Player player, string name)
         {
             this.startPoint = startPoint;
@@ -61,11 +61,22 @@ namespace Rossi_PAC_MAN_Midterm.Objects
 
             startTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            if (isActive && player.isActive && startTimer <= 0)
+            if (isActive && player.isActive && startTimer <= 0 && flee)
+            {
+                fsm.SwitchState("FLEE_STATE");
+                fleeTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (fleeTimer <= 0)
+                {
+                    fleeTimer = 10f;
+                    flee = false;
+                }
+            }
+
+            if (isActive && player.isActive && startTimer <= 0 && !flee)
             {
                 fsm.SwitchState("CHASE_STATE");
             }
-            if (isActive && !player.isActive && startTimer <= 0)
+            if (isActive && !player.isActive && startTimer <= 0 && !flee)
             {
                 fsm.SwitchState("ROAM_STATE");
             }
@@ -79,6 +90,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects
                     VectorPosition = PointToVectorConvert(tileSize, GridPosition);
                     timer = timerStartVal;
                     isActive = true;
+                    startTimer = 5f;
                     fsm.SwitchState("START_STATE");
                 }
             }
@@ -89,7 +101,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects
             {
                 if (spriteManager != null)
                 {
-                    return new Rectangle((int)VectorPosition.X, (int)VectorPosition.Y, texture.Width, texture.Height);
+                    return new Rectangle((int)VectorPosition.X, (int)VectorPosition.Y, spriteManager._currentAnimation._frameWidth, spriteManager._currentAnimation._frameHeight);
                 }
                 return Rectangle.Empty;
             }

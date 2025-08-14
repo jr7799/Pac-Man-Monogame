@@ -37,7 +37,7 @@ namespace Rossi_PAC_MAN_Midterm.FSM
             M_STATE.Initialize();
             M_STATE.LoadContent(Globals.g_Content);
         }
-        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos)
+        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos, TileMap tileMap = null)
         {
             M_STATE.HandleInput(gameTime);
             M_STATE.Update(gameTime);

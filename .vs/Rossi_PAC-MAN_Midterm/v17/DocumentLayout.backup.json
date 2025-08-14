@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\fsm\\base\\basefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:fsm\\base\\basefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\fsm\\ghostfsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:fsm\\ghostfsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\states\\base\\basegamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:states\\base\\basegamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\fleestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\fleestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\base\\baseghoststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\base\\baseghoststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\startstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\startstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\base\\basegameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\base\\basegameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\dobbychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\dobbychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\winkychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\winkychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\dobbychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\dobbychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\hokeychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +27,56 @@
       "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\kreacherchasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\roamstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\roamstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\egg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\egg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\states\\base\\basegamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:states\\base\\basegamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\fleestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\fleestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\fsm\\ghostfsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:fsm\\ghostfsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\roamstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\roamstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\environment\\pacmangridmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:environment\\pacmangridmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\fsm\\base\\basefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:fsm\\base\\basefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\fsm\\gamefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:fsm\\gamefsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\startstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\startstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\objects\\ghost states\\base\\baseghoststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|solutionrelative:objects\\ghost states\\base\\baseghoststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24925562-B10E-41AD-8D69-2640150674DD}|Rossi_PAC_MAN_Midterm.csproj|c:\\users\\jayro\\onedrive\\documents\\github\\pac-man-monogame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Globals.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Environment\\Globals.cs",
               "RelativeDocumentMoniker": "Environment\\Globals.cs",
@@ -103,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -116,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
@@ -125,12 +133,11 @@
               "ViewState": "AgIAAEEAAAAAAAAAAAA9wFYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T14:39:02.148Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "BaseGameState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\States\\Base\\BaseGameState.cs",
               "RelativeDocumentMoniker": "States\\Base\\BaseGameState.cs",
@@ -144,26 +151,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\States\\GameState.cs",
               "RelativeDocumentMoniker": "States\\GameState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\States\\GameState.cs",
               "RelativeToolTip": "States\\GameState.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAkwFcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwIEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T14:59:24.163Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "BaseGameObject.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Base\\BaseGameObject.cs",
               "RelativeDocumentMoniker": "Objects\\Base\\BaseGameObject.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Base\\BaseGameObject.cs",
               "RelativeToolTip": "Objects\\Base\\BaseGameObject.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAA3wDcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T13:43:02.698Z",
               "IsPinned": true,
@@ -171,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "Egg.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Egg.cs",
               "RelativeDocumentMoniker": "Objects\\Egg.cs",
@@ -180,17 +188,18 @@
               "ViewState": "AgIAAAQAAAAAAAAAAAAuwBoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T21:15:54.276Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Ghost.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost.cs",
               "RelativeToolTip": "Objects\\Ghost.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAqwGQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAD8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T15:34:35.38Z",
               "IsPinned": true,
@@ -198,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "GhostFSM.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\FSM\\GhostFSM.cs",
               "RelativeDocumentMoniker": "FSM\\GhostFSM.cs",
@@ -212,33 +221,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
+              "Title": "PacManGridMap.cs",
+              "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Environment\\PacManGridMap.cs",
+              "RelativeDocumentMoniker": "Environment\\PacManGridMap.cs",
+              "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Environment\\PacManGridMap.cs",
+              "RelativeToolTip": "Environment\\PacManGridMap.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwFYAAACZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T13:36:01.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GameFSM.cs",
+              "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\FSM\\GameFSM.cs",
+              "RelativeDocumentMoniker": "FSM\\GameFSM.cs",
+              "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\FSM\\GameFSM.cs",
+              "RelativeToolTip": "FSM\\GameFSM.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T13:34:14.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "BaseFSM.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\FSM\\Base\\BaseFSM.cs",
               "RelativeDocumentMoniker": "FSM\\Base\\BaseFSM.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\FSM\\Base\\BaseFSM.cs",
               "RelativeToolTip": "FSM\\Base\\BaseFSM.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wCIAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCIAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T18:53:45.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Player.cs",
               "RelativeDocumentMoniker": "Objects\\Player.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Player.cs",
               "RelativeToolTip": "Objects\\Player.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwB4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAUwNkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T17:43:03.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "BaseGhostState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\Base\\BaseGhostState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\Base\\BaseGhostState.cs",
@@ -246,25 +281,24 @@
               "RelativeToolTip": "Objects\\Ghost States\\Base\\BaseGhostState.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T18:39:12.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T18:39:12.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "StartState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\StartState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\StartState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\StartState.cs",
               "RelativeToolTip": "Objects\\Ghost States\\StartState.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwA4AAAB5AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T17:30:09.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FleeState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\FleeState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\FleeState.cs",
@@ -277,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "RoamState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\RoamState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\RoamState.cs",
@@ -290,52 +324,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "KreacherChaseState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\KreacherChaseState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\KreacherChaseState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\KreacherChaseState.cs",
               "RelativeToolTip": "Objects\\Ghost States\\KreacherChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T17:59:20.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "HokeyChaseState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\HokeyChaseState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\HokeyChaseState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\HokeyChaseState.cs",
               "RelativeToolTip": "Objects\\Ghost States\\HokeyChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T17:59:30.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "WinkyChaseState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\WinkyChaseState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\WinkyChaseState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\WinkyChaseState.cs",
               "RelativeToolTip": "Objects\\Ghost States\\WinkyChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T17:58:48.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "DobbyChaseState.cs",
               "DocumentMoniker": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\DobbyChaseState.cs",
               "RelativeDocumentMoniker": "Objects\\Ghost States\\DobbyChaseState.cs",
               "ToolTip": "C:\\Users\\jayro\\OneDrive\\Documents\\GitHub\\Pac-Man-Monogame\\Objects\\Ghost States\\DobbyChaseState.cs",
               "RelativeToolTip": "Objects\\Ghost States\\DobbyChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T15:48:54.967Z",
               "EditorCaption": ""

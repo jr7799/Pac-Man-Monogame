@@ -14,7 +14,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects.Ghost_States
     {
         public override void PerformAction(GameTime gameTime, Point GridPosition, Vector2 VectorPosition, TileMap tileMap)
         {
-            Debug.WriteLine("PERFORMING KREACHER CHASE ACTION");
+            //Debug.WriteLine("PERFORMING KREACHER CHASE ACTION");
         }
     }
 }

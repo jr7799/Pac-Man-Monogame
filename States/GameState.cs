@@ -93,11 +93,13 @@ namespace Rossi_PAC_MAN_Midterm.States
             }
             CheckCollisionsPlayerToEggs(player, pacmanMap.eggs, ghosts);
 
+
             //input
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 InvokeGameSignals("QUIT_GAME");
             }
+            //game state switches
             if (player.playerLives <= 0)
             {
                InvokeStateSwitched("LOSE_STATE");
@@ -121,12 +123,13 @@ namespace Rossi_PAC_MAN_Midterm.States
                 {
                     if(egg.isPower)
                     {
-                        egg.isActive = false;
-                        Globals.G_PlayerScore += 50;
                         foreach (var g in Ghosts)
                         {
-                            g.fsm.SwitchState("FLEE_STATE");
+                            g.flee = true;
                         }
+                        egg.isActive = false;
+                        Globals.G_PlayerScore += 50;
+                        
                     }
                     else
                     {
