@@ -46,34 +46,33 @@ namespace Rossi_PAC_MAN_Midterm.States
             SpriteManager spriteManager = new SpriteManager();
             Texture2D playerIdle = content.Load<Texture2D>("playerRight");
             spriteManager.LoadAnimation("idle", playerIdle, 16, 16, 4, 0.1f);
-            player = new Player(spriteManager, new Point(12, 28), 16, Globals.spriteScale, 100f, pacmanMap);
+            player = new Player(spriteManager, new Point(12, 28), 16, Globals.spriteScale, 125f, pacmanMap);
             AddGameObject(player);
 
             SpriteManager spriteManager1 = new SpriteManager();
             Texture2D ghost = content.Load<Texture2D>("blue");
             spriteManager1.LoadAnimation("idle", ghost, 13, 12, 1, 0.1f);
-            Ghost winky = new Ghost(spriteManager1, new Point(9, 19), 16, Globals.spriteScale, 110f, pacmanMap, player, "winky");
+            Ghost winky = new Ghost(spriteManager1, new Point(9, 19), 16, 175f, pacmanMap, player, "winky");
             AddGameObject(winky); ghosts.Add(winky);
 
             SpriteManager spriteManager2 = new SpriteManager();
             Texture2D ghost1 = content.Load<Texture2D>("purp");
             spriteManager2.LoadAnimation("idle", ghost1, 13, 12, 1, 0.1f);
-            Ghost dobby = new Ghost(spriteManager2, new Point(9, 17), 16, Globals.spriteScale, 110f, pacmanMap, player, "dobby");
+            Ghost dobby = new Ghost(spriteManager2, new Point(9, 17), 16, 175f, pacmanMap, player, "dobby");
             AddGameObject(dobby); ghosts.Add(dobby);
 
             SpriteManager spriteManager3 = new SpriteManager();
             Texture2D ghost2 = content.Load<Texture2D>("yel");
             spriteManager3.LoadAnimation("idle", ghost2, 13, 12, 1, 0.1f);
-            Ghost hokey = new Ghost(spriteManager3, new Point(15, 17), 16, Globals.spriteScale, 110f, pacmanMap, player, "hokey");
+            Ghost hokey = new Ghost(spriteManager3, new Point(15, 17), 16, 175f, pacmanMap, player, "hokey");
             AddGameObject(hokey); ghosts.Add(hokey);
 
             SpriteManager spriteManager4 = new SpriteManager();
             Texture2D ghost3 = content.Load<Texture2D>("red");
             spriteManager4.LoadAnimation("idle", ghost3, 13, 12, 1, 0.1f);
-            Ghost kreacher = new Ghost(spriteManager4, new Point(15, 19), 16, Globals.spriteScale, 110f, pacmanMap, player, "kreacher");           
+            Ghost kreacher = new Ghost(spriteManager4, new Point(15, 19), 16, 175f, pacmanMap, player, "kreacher");           
             AddGameObject(kreacher); ghosts.Add(kreacher);
             
-
             foreach(var g in ghosts)
             {
                 g.fsm.SwitchState("START_STATE");
@@ -92,7 +91,7 @@ namespace Rossi_PAC_MAN_Midterm.States
                 g.Update(gameTime);
             }
             CheckCollisionsPlayerToEggs(player, pacmanMap.eggs, ghosts);
-
+            CheckCollisionsPlayerToGhosts(player, ghosts);
 
             //input
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
@@ -103,8 +102,9 @@ namespace Rossi_PAC_MAN_Midterm.States
             if (player.playerLives <= 0)
             {
                InvokeStateSwitched("LOSE_STATE");
+               player.playerLives = 3;
             }
-            if(pacmanMap.eggs.Count <= 0)
+            if (pacmanMap.eggs.Count <= 0)
             {
                 InvokeStateSwitched("WIN_STATE");
             }
@@ -116,20 +116,22 @@ namespace Rossi_PAC_MAN_Midterm.States
         }
         private void CheckCollisionsPlayerToEggs(Player Player, List<Egg> eggs, List<Ghost> Ghosts)
         {
-            foreach (var egg in eggs)
+            for (int i = eggs.Count - 1; i >= 0; i--)
             {
+                var egg = eggs[i];
                 if (!egg.isActive) continue;
+
                 if (Player.BoxCollider.Intersects(egg.BoxCollider))
                 {
-                    if(egg.isPower)
+                    if (egg.isPower)
                     {
                         foreach (var g in Ghosts)
                         {
                             g.flee = true;
+                            g.fleeTimer = 10f;
                         }
                         egg.isActive = false;
                         Globals.G_PlayerScore += 50;
-                        
                     }
                     else
                     {
@@ -137,6 +139,7 @@ namespace Rossi_PAC_MAN_Midterm.States
                         Globals.G_PlayerScore += 10;
                     }
 
+                    eggs.RemoveAt(i);
                 }
             }
         }
@@ -154,7 +157,9 @@ namespace Rossi_PAC_MAN_Midterm.States
                     }
                     else
                     {
+                        player.playerLives--;
                         player.isActive = false;
+                        break;
                     }
                 }
             }

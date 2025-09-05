@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Rossi_PAC_MAN_Midterm.Environment;
 using Rossi_PAC_MAN_Midterm.FSM.Base;
+using Rossi_PAC_MAN_Midterm.Objects;
 using Rossi_PAC_MAN_Midterm.States;
 using Rossi_PAC_MAN_Midterm.States.Base;
 using System;
@@ -37,7 +38,8 @@ namespace Rossi_PAC_MAN_Midterm.FSM
             M_STATE.Initialize();
             M_STATE.LoadContent(Globals.g_Content);
         }
-        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos, TileMap tileMap = null)
+        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos, Point pointDir, TileMap tileMap = null, 
+                                    int tileSize = 0, float moveSpeed = 0, Player player = null)
         {
             M_STATE.HandleInput(gameTime);
             M_STATE.Update(gameTime);

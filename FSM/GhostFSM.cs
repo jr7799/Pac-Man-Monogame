@@ -11,11 +11,13 @@ using System.Threading.Tasks;
 using Rossi_PAC_MAN_Midterm.States.Base;
 using Rossi_PAC_MAN_Midterm.Objects.Ghost_States.Base;
 using Rossi_PAC_MAN_Midterm.Objects.Ghost_States;
+using Rossi_PAC_MAN_Midterm.Objects;
 
 namespace Rossi_PAC_MAN_Midterm.FSM
 {
     public class GhostFSM : BaseFSM<BaseGhostState>
     {
+
         public override void Initialize(string name)
         {
             AddState("START_STATE", new StartState());
@@ -46,9 +48,15 @@ namespace Rossi_PAC_MAN_Midterm.FSM
         {
             M_STATE = this[newKey];
         }
-        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos, TileMap tileMap)
+        public override void Update(GameTime gameTime, Point point, Vector2 vectorPos,
+                                    Point pointDir, TileMap tileMap, int tileSize, float moveSpeed, Player player) ///not used, part of base without refs
         {
-            M_STATE.PerformAction(gameTime, point, vectorPos, tileMap);
+            //M_STATE.PerformAction(player, gameTime, point, vectorPos, pointDir, tileMap, tileSize, moveSpeed);
+        }
+        public  void MyUpdate(GameTime gameTime, ref Point point, ref Vector2 vectorPos,
+                                ref Point pointDir, TileMap tileMap, int tileSize, float moveSpeed, Player player) //using cause of refs, not base
+        {
+            M_STATE.PerformAction(player, gameTime, ref point, ref vectorPos, ref pointDir, tileMap, tileSize, moveSpeed);
         }
     }
 }

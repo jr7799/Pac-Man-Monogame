@@ -84,7 +84,7 @@ namespace Rossi_PAC_MAN_Midterm
             {
                 Exit();
             }
-            gameFSM.Update(gameTime, Point.Zero, Vector2.Zero);
+            gameFSM.Update(gameTime, Point.Zero, Vector2.Zero, Point.Zero);
             
             base.Update(gameTime);
         }

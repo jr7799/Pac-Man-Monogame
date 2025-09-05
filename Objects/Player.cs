@@ -21,7 +21,6 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         public int playerLives = 3;
 
         //moving data
-        private bool isMoving = false;
         private bool _facingLeft;
         private readonly int tileSize;
         private readonly float moveTileScale;
@@ -29,29 +28,27 @@ namespace Rossi_PAC_MAN_Midterm.Objects
 
         public TileMap tileMap;
         private Point pointDir;
+        private Point startPoint;
         private PlayerDirections currentDir = PlayerDirections.None;
         private PlayerDirections previousDir = PlayerDirections.None;
-        public Player(SpriteManager spriteManager, Point startPoint, int tileSize, float moveTileScale, float moveSpeed, TileMap tileMap)
+
+        private float timer = 2.5f;
+        private float timerStartVal = 2.5f;
+        public Player(SpriteManager spriteManager, Point startPoint, int tileSize, float moveTileScale, float moveSpeed, TileMap tileMap, bool isActive = true)
         {
+            this.startPoint = startPoint;
             this.spriteManager = spriteManager;
             this.tileSize = tileSize;
             this.moveTileScale = moveTileScale;
             this.moveSpeed = moveSpeed;
             this.tileMap = tileMap;
             layer = 1;
-            isActive = true;
+            this.isActive = isActive;
+            playerLives = 3;
 
             //start pos'
             GridPosition = startPoint;
             VectorPosition = PointToVectorConvert(tileSize, GridPosition);
-        }
-        public void Moving()
-        {
-            isMoving = true;
-        }
-        public void Idle()
-        {
-            isMoving = false;
         }
         public void MoveUp(GameTime gameTime)
         {
@@ -161,49 +158,64 @@ namespace Rossi_PAC_MAN_Midterm.Objects
         }
         public override void Update(GameTime gameTime)
         {
-            var kb = Keyboard.GetState();
-
-            if (kb.IsKeyDown(Keys.W)  && IsWalkableTile(GridPosition.X, GridPosition.Y - 1) || kb.IsKeyDown(Keys.Up) && IsWalkableTile(GridPosition.X, GridPosition.Y - 1)) //check walkable on key press
+            if (isActive)
             {
-                previousDir = currentDir;
-                currentDir = PlayerDirections.Up;
+                var kb = Keyboard.GetState();
+                if (kb.IsKeyDown(Keys.W) && IsWalkableTile(GridPosition.X, GridPosition.Y - 1) || kb.IsKeyDown(Keys.Up) && IsWalkableTile(GridPosition.X, GridPosition.Y - 1)) //check walkable on key press
+                {
+                    previousDir = currentDir;
+                    currentDir = PlayerDirections.Up;
+                }
+                else if (kb.IsKeyDown(Keys.S) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1) || kb.IsKeyDown(Keys.Down) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1))
+                {
+                    previousDir = currentDir;
+                    currentDir = PlayerDirections.Down;
+                }
+                else if (kb.IsKeyDown(Keys.A) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y) || kb.IsKeyDown(Keys.Left) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y))
+                {
+                    previousDir = currentDir;
+                    currentDir = PlayerDirections.Left;
+                }
+                else if (kb.IsKeyDown(Keys.D) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y) || kb.IsKeyDown(Keys.Right) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y))
+                {
+                    previousDir = currentDir;
+                    currentDir = PlayerDirections.Right;
+                }
             }
-            else if (kb.IsKeyDown(Keys.S) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1) || kb.IsKeyDown(Keys.Down) && IsWalkableTile(GridPosition.X, GridPosition.Y + 1))
+            if(isActive)
             {
-                previousDir = currentDir;
-                currentDir = PlayerDirections.Down;
+                switch (currentDir)
+                {
+                    case PlayerDirections.Up:
+                        MoveUp(gameTime);
+                        break;
+                    case PlayerDirections.Down:
+                        MoveDown(gameTime);
+                        break;
+                    case PlayerDirections.Left:
+                        MoveLeft(gameTime);
+                        break;
+                    case PlayerDirections.Right:
+                        MoveRight(gameTime);
+                        break;
+                }
             }
-            else if (kb.IsKeyDown(Keys.A) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y) || kb.IsKeyDown(Keys.Left) && IsWalkableTile(GridPosition.X - 1, GridPosition.Y))
+            if (!isActive) //reset ghost
             {
-                previousDir = currentDir;
-                currentDir = PlayerDirections.Left;
-            }
-            else if (kb.IsKeyDown(Keys.D) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y) || kb.IsKeyDown(Keys.Right) && IsWalkableTile(GridPosition.X + 1, GridPosition.Y))
-            {
-                previousDir = currentDir;
-                currentDir = PlayerDirections.Right;
-            }
-
-            switch (currentDir)
-            { 
-                case PlayerDirections.Up:
-                    MoveUp(gameTime);
-                    break;
-                case PlayerDirections.Down:
-                    MoveDown(gameTime);
-                    break;
-                case PlayerDirections.Left:
-                    MoveLeft(gameTime);
-                    break;
-                case PlayerDirections.Right:
-                    MoveRight(gameTime);
-                    break;
+                GridPosition = startPoint;
+                VectorPosition = PointToVectorConvert(tileSize, GridPosition);
+                timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (timer <= 0)
+                {
+                    timer = timerStartVal;
+                    isActive = true;
+                }
             }
         }
         public override void Render(SpriteBatch spriteBatch)
         {
             SpriteEffects flipEffect = _facingLeft ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            if(isActive) spriteManager.Draw(spriteBatch, new Vector2(VectorPosition.X - spriteManager._currentAnimation._frameWidth, VectorPosition.Y - spriteManager._currentAnimation._frameHeight), flipEffect);
+            if(isActive) spriteManager.Draw(spriteBatch, new Vector2(VectorPosition.X - spriteManager._currentAnimation._frameWidth, VectorPosition.Y - spriteManager._currentAnimation._frameHeight), Color.White, flipEffect);
         }
         public override Rectangle BoxCollider
         {

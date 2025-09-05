@@ -55,13 +55,13 @@ namespace Rossi_PAC_MAN_Midterm.Anims
                 }
             }
         }
-        public void Draw(SpriteBatch spriteBatch, Vector2 position, SpriteEffects effects)
+        public void Draw(SpriteBatch spriteBatch, Vector2 position, SpriteEffects effects, Color color)
         {
             int row = _currentFrame / (_spriteSheet.Width / _frameWidth);
             int column = _currentFrame % (_spriteSheet.Width / _frameWidth);
 
             sourceRectangle = new Rectangle(column * _frameWidth, row * _frameHeight, _frameWidth, _frameHeight);
-            spriteBatch.Draw(_spriteSheet, position, sourceRectangle, Color.White, 0f, Vector2.Zero, 2f, effects, 1f);
+            spriteBatch.Draw(_spriteSheet, position, sourceRectangle, color, 0f, Vector2.Zero, 2f, effects, 1f);
         }
     }
 }

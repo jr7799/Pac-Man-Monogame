@@ -42,9 +42,9 @@ namespace Rossi_PAC_MAN_Midterm.Anims
             _currentAnimation?.Update(gameTime);
         }
 
-        public void Draw(SpriteBatch spriteBatch, Vector2 position, SpriteEffects effects = SpriteEffects.None)
+        public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color, SpriteEffects effects = SpriteEffects.None)
         {
-            _currentAnimation?.Draw(spriteBatch, position, effects);
+            _currentAnimation?.Draw(spriteBatch, position, effects, color);
         }
     }
 }

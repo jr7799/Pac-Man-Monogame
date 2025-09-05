@@ -24,7 +24,7 @@ namespace Rossi_PAC_MAN_Midterm.Objects
     {
         public TileType Type { get; set; }
         public bool IsWalkable => Type == TileType.Floor || Type == TileType.Tube || Type == TileType.PowerupFloor;
-        public bool IsGhostWalkable => Type == TileType.Floor || Type == TileType.Tube || Type == TileType.PowerupFloor || Type == TileType.Gate || Type == TileType.FloorGate;
+        public bool IsGhostWalkable => Type == TileType.Gate || Type == TileType.FloorGate;
 
         public Rectangle textureSourceRectangle;
 

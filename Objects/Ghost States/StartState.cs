@@ -12,28 +12,59 @@ namespace Rossi_PAC_MAN_Midterm.Objects.Ghost_States
 {
     public class StartState : BaseGhostState
     {
-        public override void PerformAction(GameTime gameTime, Point GridPosition, Vector2 VectorPosition, TileMap tileMap)
+        Random randomPoint = new Random();
+        Point randDir = new Point();
+        int x;
+        int y;
+        bool hasTarget;
+        public override void PerformAction(Player player, GameTime gameTime,
+                                            ref Point GridPosition, ref Vector2 VectorPosition, 
+                                            ref Point pointDir, TileMap tileMap, int tileSize, 
+                                            float moveSpeed)
         {
-            Debug.WriteLine("PERFORMING START ACTION");
-            //pointDir = new Point(0, -1);
-            //float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if(!hasTarget ) //get a target
+            {
+                randDir = Directions[randomPoint.Next(Directions.Length)]; //get a random direction from the Directions list
+                x = randDir.X;
+                y = randDir.Y;
+                hasTarget = true;
+            }
 
-            //if (IsWalkableTile(GridPosition.X, GridPosition.Y - 1, tileMap)) //continuous check while moving
-            //{
-            //    Vector2 targetPos = PointToVectorConvert(tileSize, GridPosition + pointDir); //target position
-            //    Vector2 toTarget = targetPos - VectorPosition;                               //target minus current = distance to move
+            startTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (startTimer > 0)
+            {
+                pointDir = new Point(x, y);
+                float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            //    float distThisFrame = moveSpeed * deltaTime;                                 //pixels to move                               
-            //    if (toTarget.Length() <= distThisFrame)                                      //dist to move <= pixels to move                            
-            //    {
-            //        VectorPosition = targetPos; //at target
-            //        GridPosition += pointDir;   //increase grid position to check next tile after this
-            //    }
-            //    else
-            //    {
-            //        VectorPosition += Vector2.Normalize(toTarget) * distThisFrame;  //not at target, normalized vector 0 or 1 times dist to move
-            //    }
-            //}
+                if (IsWalkableGhostTile(GridPosition.X + x, GridPosition.Y + y, tileMap))
+                {
+                    Vector2 targetPos = PointToVectorConvert(tileSize, GridPosition + pointDir);
+                    Vector2 toTarget = targetPos - VectorPosition;
+
+                    float distThisFrame = moveSpeed * deltaTime;// amount to move
+                    if (toTarget.Length() <= distThisFrame)
+                    {
+                        hasTarget = false; //when at center of tile/location, new direction
+                        VectorPosition = targetPos;
+                        GridPosition += pointDir;
+                    }
+                    else //keep moving
+                    {
+                        VectorPosition += Vector2.Normalize(toTarget) * distThisFrame;
+                    }
+                }
+                else//not walkable get new direction
+                {
+                    hasTarget = false;
+                }
+            }
+            else //move out of "gate" area
+            {
+                MoveToDirectGhostTiles(gameTime, 12, 15, ref GridPosition, 
+                    ref VectorPosition, ref pointDir, tileMap, moveSpeed, tileSize);
+            }
+
+
         }
     }
 }

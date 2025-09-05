@@ -103,18 +103,21 @@ namespace Rossi_PAC_MAN_Midterm.States
             Vector2 titlePos = new Vector2(Globals.Graphics.PreferredBackBufferWidth / 2 - Globals.g_font.MeasureString(title).X / 2, Globals.Graphics.PreferredBackBufferHeight / 2 - Globals.g_font.MeasureString(title).Y * 2.5f);
             _spriteBatch.DrawString(Globals.g_font, title, titlePos, Color.White);
 
-            Vector2 ExitPos = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 2);
+            Vector2 instPos = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32);
+            _spriteBatch.DrawString(Globals.g_font, "SMASH ALL THE SLIMES EGGS AND AVOID BEING CAUGHT!!!!", instPos, Color.White);
+
+            Vector2 ExitPos = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 3);
             _spriteBatch.DrawString(Globals.g_font, "EXIT = ESC", ExitPos, Color.White);
 
-            Vector2 NavPos1 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 3);
+            Vector2 NavPos1 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 4);
             _spriteBatch.DrawString(Globals.g_font, "UP = W", NavPos1, Color.White);
-            Vector2 NavPos2 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 4);
+            Vector2 NavPos2 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 5);
             _spriteBatch.DrawString(Globals.g_font, "DOWN = S", NavPos2, Color.White);
-            Vector2 NavPos3 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 5);
+            Vector2 NavPos3 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 6);
             _spriteBatch.DrawString(Globals.g_font, "LEFT = A", NavPos3, Color.White);
-            Vector2 NavPos4 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 6);
+            Vector2 NavPos4 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 7);
             _spriteBatch.DrawString(Globals.g_font, "RIGHT = D", NavPos4, Color.White);
-            Vector2 NavPos5 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 7);
+            Vector2 NavPos5 = new Vector2(0 + Globals.g_font.MeasureString(title).X / 4, 32 * 8);
             _spriteBatch.DrawString(Globals.g_font, "SELECT = ENTER", NavPos5, Color.White);
 
             for (int i = 0; i < _menuItems.Length; i++)
